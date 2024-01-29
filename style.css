@@ -10,7 +10,7 @@
 body{
     margin: 0;
     font-family: system-ui;
-    background-image: url(/images/background3.jpg);
+    background-image: url(../images/background3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
