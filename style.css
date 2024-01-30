@@ -10,9 +10,10 @@
 body{
     margin: 0;
     font-family: system-ui;
-    background-image: url(../images/background3.jpg);
+    background-image: url("images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .hero{
@@ -69,7 +70,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image: url("images/background3.jpg");
+  background-image: url("images/hellokitty\ background.png");
   margin: 0;
 }
 
@@ -80,7 +81,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 50%;
 }
 
 #mz-gallery {
@@ -95,11 +96,9 @@ body {
   max-width: 1900px;
   margin: 35px 0px;
   background-color: rgba(255,204,203,255);
-  background-image: radial-gradient(rgb(245, 141, 208) 1px, black 1px);
+  background-image: radial-gradient(rgb(245, 141, 208) 1px, rgba(77, 77, 77, 0) 1px);
   background-size: 40px 40px;
   border: 1px dotted rgb(245, 141, 208);
-  outline: 1px dotted rgb(245, 141, 208);
-  outline-offset: 20px;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
@@ -113,10 +112,10 @@ body {
 
 @keyframes background {
   0% {
-    background-position: -300% 100%;
+    background-position: -400% 100%;
   }
   100% {
-    background-position: 100% -300%;
+    background-position: 100% -400%;
   }
 }
 
@@ -129,15 +128,15 @@ body {
 }
 
 #mz-gallery::-webkit-scrollbar-thumb {
-  background: #666;
+  background: rgb(245, 141, 208);
 }
 
 #mz-gallery::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgb(244, 140, 207);
 }
 
 #mz-gallery::-webkit-scrollbar-thumb:active {
-  background: #444;
+  background: rgb(243, 139, 206);
 }
 
 #mz-gallery::-webkit-scrollbar-button:single-button:horizontal:decrement {
@@ -269,6 +268,7 @@ body {
   pointer-events: none;
   animation: background 100s linear infinite;
   transition: all 0.3s ease-in-out;
+  background-image: url("images/hello\ kitty\ face.jpg");
 }
 
 #mz-gallery figure:hover img {
@@ -286,10 +286,10 @@ body {
 
 #mz-gallery figure:hover figcaption {
   opacity: 0.8;
-  color: white;
+  color: rgb(0, 0, 0);
   outline: 1px solid rgb(245, 141, 208);
   outline-offset: -20px;
-  text-shadow: 1px 1px 3px black, 0px 0px 5px black;
+  text-shadow: 1px 1px 3px rgb(249, 247, 247), 0px 0px 5px rgb(250, 247, 247);
   transition: all 0.3s ease-in-out;
 }
 
